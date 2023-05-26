@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+		<title>Portfolio Website</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="description" content="Portfolio Website" />
+		<meta name="keywords" content="HTML" />
+		<meta name="author" content="Utshav Lamsal" />
+		
+		<link rel="stylesheet" href="../css/style.css">
+        <style>
+            body{
+                background: #d7e4ed;
+            }
+        </style>
+</head>
+
+<body>
+	   <nav> 
+<!-- Code for navigation bar-->
+            <div class="menu">
+        	   <div class="logo">
+        		<!--Website Logo-->
+          		    <img src="../images/Logo.png" alt="Logo">
+        	   </div>
+
+                <div class="nav-links">
+        	       <ul>
+<!--navigation bar buttons-->
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+				        <li><a href="../home.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!--map-->
+
+        <section class="tauko">
+            <h1>Contact Us</h1>
+        </section>
+
+        <section class="location">
+            <iframe src="https://heraldcollege.edu.np/contact-us" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+<!--form-->
+
+        <section class="faram">
+            
+            <form name="message-form" onsubmit='validateForm()'>
+                <input  type="text" name="name" placeholder="Enter Your Name">
+                <input type="email" name="email" placeholder="Enter Your Email Address">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea rows="10" name="message" placeholder="Enter Your Message Here"></textarea>
+                <br>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+<!--internal js -->
+
+        <script>
+            function validateForm() {
+                var name = document.forms["message-form"]["name"].value;
+                var email = document.forms["message-form"]["email"].value;
+                var subject = document.forms["message-form"]["subject"].value;
+                var message = document.forms["message-form"]["message"].value;
+
+                if (name == "" || email == "" || message == ""){
+                    alert("Empty fields found. Please fill the form.");
+                }
+                else {
+                    alert("Thank you for the feedback.");
+                }
+            }
+        </script>
+
+<!--footer-->
+
+<section>
+    <footer>
+        <div class="footer-content">
+        <h3>Social Media</h3>
+        <p style="color: grey;">You can come in contact via following social media.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/utshav.lamsal.9" target="_blank"><img src="../images/facebook.png" alt="social-icon"></a></li>
+                <li><a href="https://www.instagram.com/hitmeagain_" target="_blank"><img src="../images/instagram.png" alt="social-icon"></a></li>
+                <li><a href="https://twitter.com/UtshavLamsal" target="_blank"><img src="../images/twitter.png" alt="social-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/utshav-lamsal-94a90b26a/" target="_blank"><img src="../images/linkedin.png" alt="social-icon"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 Herald College. Designed by <span>Utshav Lamsal</span></p>
+        </div>
+    </footer>
+</section>
+
+</body>
+
+</html>

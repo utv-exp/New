@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+		<title>Portfolio Website</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="description" content="Portfolio Website" />
+		<meta name="keywords" content="HTML" />
+		<meta name="author" content="Utshav Lamsal" />
+		
+		<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+	<nav> 
+<!-- Code for navigation bar-->
+        <div class="menu">
+        	<div class="logo">
+        		<!--Website Logo-->
+          		<img src="../images/Logo.png" alt="Logo">
+        	</div>
+
+            <div class="nav-links">
+        	   <ul>
+<!--navigation bar buttons-->
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+				    <li><a href="../home.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--content-->
+
+    <section class="tauko">
+        <h1>SlapDash Blogs</h1>
+        <h4>This blog talks about almost everything that peaks the interest of Utshav.</h4>
+    </section>
+    <hr>
+    <section class="content-container">
+            <h2>Impacts of Technology</h2>
+
+                
+
+                <div class="blog-container">
+
+                    <h3>Introduction</h3>
+                    <p>In numerous ways, modern technology has altered our lives, revolutionizing how we work, live, and play. Communication is one of the areas where technology has had the greatest impact. Conversing was once a difficult task, but email, text messages, and other forms of social media have made it much easier.<br>
+                    <br>
+                    Computers and the Internet have changed the face of education. Computers can store massive amounts of data in a very small amount of space. They allow for better information presentation, making the teaching process easier and more effective. People all over the world now have access to unprecedented learning opportunities thanks to online education.<br>
+                    <br>
+                    The healthcare industry has been greatly influenced by technological advancements. Diagnostic tool advancements enable doctors to detect health problems earlier, increasing the likelihood of successful life-saving treatments. Medical technology advancements have extended people's lives and improved their quality of life all over the world.<br>
+                    <br>
+                    Technology has vastly increased productivity. Engineers can use computer modeling to provide performance information before prototyping. The ability of networked computers to share and manipulate data in the office can speed up a variety of tasks, allowing employees to work more efficiently and productively. Agriculture technology advancements have increased food production. Critical time-consuming processes in so many areas of our lives can now be completed with ease and in a fraction of the time, they once required. <br> 
+                    </p>
+
+    <!--image slider start-->
+                <div class="slider">
+
+                    <div id="img">
+                        <img src="../images/tech5.jpg">
+                    </div>
+                </div>
+
+                    <script>
+                    var images = ['../images/tech5.jpg', '../images/tech4.jpg', '../images/tech3.jpg', '../images/tech2.jpg', '../images/tech1.jpg'];
+                    var x = 0;
+                    var imgs = document.getElementById('img');
+                    setInterval(slider, 3000);
+                    function slider() {
+
+                    if (x < images.length) {
+                    x = x + 1;
+                        } else {
+                    x = 1;
+                    }
+
+
+                    imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+                    }
+                    </script>
+                    <!--image slider ends-->
+
+                        <h3>Advantages of Technology</h3>
+                        <p>For starters, technological advancement is beneficial to humans for a variety of reasons. At the medical level, technology can help treat more sick people, saving many lives and combating extremely dangerous viruses and bacteria. The invention of the computer was a watershed moment. As a result, communication is improved, and businesses can communicate more easily with foreign countries. Research is also made easier.<br>
+                        <br>
+                        Progress in implementing strategic technology trends is assisting businesses in saving time and, as a result, money. Exchanges are more rapid, especially when using the internet. Worldwide sales and purchases are now facilitated and possible. Almost every industry in the world has seen an increase in productivity as a result of technological advancements. It also enhances people's daily lives.<br>
+                        </p>
+
+                        <h3>Disadvantages of Technology</h3>
+                        <p>On the other hand, the evolution of modern technology has drawbacks, such as reliance on new technology. Man is no longer required to think. Even if the calculator is a useful invention, man no longer performs mental calculations or exercises his memory. Human capital decline implies an increase in unemployment. Devices can, in some cases, replace the human mind.<br>
+                        <br>
+                        Finally, because most technological advances aim to reduce human effort, it would imply that machines do more work. This translates to less work for people: the human is becoming increasingly obsolete as processes are automated and jobs are made redundant.<br>
+                        <br>
+                        The negative impact of technology on children should not be underestimated either.<br>
+                        </p>
+
+                        <h3>Verdict</h3>
+                        <p>There are clearly advantages and disadvantages to using technology. The truth is that people must learn and understand technology. Using a computer or a cell phone has become a part of everyone's daily life. However, technology should not be used excessively. People who use technology excessively can develop a variety of social and physical issues.<br>
+                        <br>
+                        People must understand that, while technology is incredible, it should not be used all of the time. They should not become overly reliant on it. Humans must learn that technology is not always the best solution to a problem.<br>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+    </section>
+
+<!--footer-->
+
+    <section>
+    <footer>
+        <div class="footer-content">
+        <h3>Social Media</h3>
+        <p style="color: grey;">You can come in contact via following social media.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/utshav.lamsal.9" target="_blank"><img src="../images/facebook.png" alt="social-icon"></a></li>
+                <li><a href="https://www.instagram.com/hitmeagain_" target="_blank"><img src="../images/instagram.png" alt="social-icon"></a></li>
+                <li><a href="https://twitter.com/UtshavLamsal" target="_blank"><img src="../images/twitter.png" alt="social-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/utshav-lamsal-94a90b26a/" target="_blank"><img src="../images/linkedin.png" alt="social-icon"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 Herald College. Designed by <span>Utshav Lamsal</span></p>
+        </div>
+    </footer>
+</section>
+    </body>
+
+</html>
